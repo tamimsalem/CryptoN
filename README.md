@@ -13,3 +13,19 @@ Functionality so far:
 - Extension methods to convert back and to Base64 and Hex Encoded strings
 
 Plans for future expansion are underway.
+
+
+#Sample Code
+
+```C#
+var key = CryptoMonkey.GenerateRandomKey(AllowedKeySizes.KL_192);
+var iv = CryptoMonkey.GenerateRandomIv(AllowedBlockSizes.BL_128);
+
+var monkey = new CryptoMonkey(key, iv);
+
+var testString = "Hello World";
+
+var encryptedBase64String = monkey.EncryptString(testString);
+
+var decryptedString = monkey.DecryptString(encryptedBase64String);
+```

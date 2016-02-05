@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/tamimsalem/CryptoN</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Packaging in Release mode</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Cryptography Crypto Rijndael AES</tags>
+  </metadata>
+</package>

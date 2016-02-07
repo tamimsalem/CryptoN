@@ -14,6 +14,9 @@ Functionality so far:
 
 Plans for future expansion are underway.
 
+#Nuget
+
+You can find the build package on nuget here: https://www.nuget.org/packages/CryptoN
 
 #Sample Code
 

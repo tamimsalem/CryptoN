@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoN", "CryptoN\CryptoN.csproj", "{F0B60EF8-EB9E-41E7-A7D3-C3E329357ED2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoN", "CryptoN\CryptoN.csproj", "{F0B60EF8-EB9E-41E7-A7D3-C3E329357ED2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoN.Test", "CryptoN.Test\CryptoN.Test.csproj", "{339E914C-79BB-4550-96B2-346FB67D1BF0}"
 EndProject

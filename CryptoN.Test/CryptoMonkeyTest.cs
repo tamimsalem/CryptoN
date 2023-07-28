@@ -1,26 +1,22 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CryptoN.Test
-{
-    [TestClass]
-    public class CryptoMonkeyTest
-    {
-        [TestMethod]
-        public void TestEncryptString()
-        {
-            var key = CryptoMonkey.GenerateRandomKey(AllowedKeySizes.KL_192);
-            var iv = CryptoMonkey.GenerateRandomIv(AllowedBlockSizes.BL_128);
+namespace CryptoN.Test;
 
-            var monkey = new CryptoMonkey(key, iv);
+[TestClass]
+public class CryptoMonkeyTest {
+    [TestMethod]
+    public void TestEncryptString() {
+        var key = CryptoMonkey.GenerateRandomKey(AllowedKeySizes.KL_192);
+        var iv = CryptoMonkey.GenerateRandomIv(AllowedBlockSizes.BL_128);
 
-            var testString = "Hello World";
+        var monkey = new CryptoMonkey(key, iv);
 
-            var encryptedBase64String = monkey.EncryptString(testString);
+        var testString = "Hello World";
 
-            var decryptedString = monkey.DecryptString(encryptedBase64String);
+        var encryptedBase64String = monkey.EncryptString(testString);
 
-            Assert.AreEqual(testString, decryptedString);
-        }
+        var decryptedString = monkey.DecryptString(encryptedBase64String);
+
+        Assert.AreEqual(testString, decryptedString);
     }
 }
